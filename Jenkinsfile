@@ -1,6 +1,7 @@
 pipeline {
     agent any
     
+    // Define a custom Docker Compose project name
     environment {
         COMPOSE_PROJECT_NAME = 'skripsi'
     }
