@@ -34,7 +34,7 @@ pipeline {
                     sleep(time: 5, unit: 'SECONDS')
                     
                     echo 'Checking if service is accessible...'
-                    sh 'curl -f http://localhost:8080 || exit 1'
+                    sh 'curl -f http://localhost:8083 || exit 1'
                 }
             }
         }
