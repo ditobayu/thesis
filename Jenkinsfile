@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'git@github.com:ditobayu/infodi-be.git', credentialsId: '2950525c-2149-48d8-b38d-f777a6989102'
+                git branch: 'main', url: 'https://github.com/ditobayu/thesis.git'
             }
         }
         
@@ -42,7 +42,7 @@ pipeline {
     
     post {
         success {
-            echo 'Deployment successful! Access at http://localhost:8080'
+            echo 'Deployment successful! Access at http://localhost:8083'
         }
         failure {
             echo 'Deployment failed!'
