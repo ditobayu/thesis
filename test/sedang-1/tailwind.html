@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatGPT UI Replica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 py-2 border-b border-gray-200">
+    <div class="flex items-center space-x-2">
+      <button class="text-gray-700 text-2xl">&#9776;</button>
+      <h1 class="text-lg font-semibold">ChatGPT</h1>
+    </div>
+    <div class="flex items-center space-x-2 text-xs text-gray-500">
+      <span>4:03</span>
+      <div class="flex items-center space-x-1">
+        <span class="text-gray-500">📶</span>
+        <span class="text-gray-500">🔋52%</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Chat Content -->
+  <main class="flex-1 px-4 py-3 space-y-4 overflow-y-auto">
+    
+    <!-- User Message -->
+    <div class="flex justify-end">
+      <div class="max-w-[80%] bg-gray-100 text-gray-800 px-4 py-3 rounded-2xl rounded-br-none">
+        <p class="text-sm">I'd like to buy a new car. Start by asking me about my budget and which features I care most about, then provide a recommendation.</p>
+      </div>
+    </div>
+
+    <!-- ChatGPT Reply -->
+    <div class="flex justify-start">
+      <div class="flex items-start space-x-2">
+        <img src="/dummy.jpeg" alt="AI avatar" class="w-8 h-8 rounded-full" />
+        <div class="bg-gray-50 border border-gray-200 px-4 py-3 rounded-2xl rounded-bl-none max-w-[85%]">
+          <p class="text-gray-500 text-sm font-medium mb-1">Thought for 5s</p>
+          <p class="text-sm mb-3">
+            Perfect — let’s find the right car for you. I’ll ask a few quick questions so my recommendation is useful and realistic (I’ll search current models/prices after you answer):
+          </p>
+          <ol class="list-decimal list-inside text-sm space-y-2">
+            <li><strong>Budget</strong> — what’s your total budget or price range, and which currency?</li>
+            <li><strong>New or used?</strong> Any max age / km you’ll accept for a used car?</li>
+            <li><strong>Location</strong> — country and city or region (so I can check local availability/prices).</li>
+            <li><strong>Body type</strong> — hatchback, sedan, SUV/crossover, pickup, MPV, coupe, or open to anything?</li>
+            <li><strong>Powertrain</strong> — petrol, diesel, hybrid, plug-in hybrid, full electric, or any preference?</li>
+            <li><strong>Must-have features</strong> (rank top 3): e.g. ADAS/driver assist, AWD, large boot, 3rd row seats, towing, panoramic sunroof, Apple CarPlay/...</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Input Bar -->
+  <footer class="border-t border-gray-200 px-3 py-2 flex items-center space-x-2 bg-white">
+    <button class="text-gray-500 text-xl">🖼️</button>
+    <input 
+      type="text" 
+      placeholder="Ask anything" 
+      class="flex-1 bg-gray-100 rounded-full px-4 py-2 text-sm focus:outline-none"
+    />
+    <button class="bg-black text-white rounded-full p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+      </svg>
+    </button>
+  </footer>
+
+</body>
+</html>

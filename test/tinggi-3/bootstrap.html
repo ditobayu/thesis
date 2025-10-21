@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <!-- Bootstrap CSS CDN -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+</head>
+<body class="bg-black text-light">
+
+  <!-- Header -->
+  <div class="d-flex align-items-center p-3 border-bottom border-secondary">
+    <button class="btn btn-link text-light p-0 me-3">
+      <i class="bi bi-arrow-left"></i>
+    </button>
+    <h5 class="mb-0 flex-grow-1 text-center">Settings</h5>
+  </div>
+
+  <!-- Main content -->
+  <div class="container py-3">
+
+    <!-- Productivity Reminder -->
+    <div class="mb-4">
+      <p class="text-success small fw-semibold mb-1">Productivity reminder</p>
+      <h6 class="fw-normal mb-2">Days of the week</h6>
+      <div class="d-flex justify-content-between mb-2">
+        <button class="btn btn-secondary rounded-circle btn-sm">Mon</button>
+        <button class="btn btn-secondary rounded-circle btn-sm">Tue</button>
+        <button class="btn btn-secondary rounded-circle btn-sm">Wed</button>
+        <button class="btn btn-secondary rounded-circle btn-sm">Thu</button>
+        <button class="btn btn-secondary rounded-circle btn-sm">Fri</button>
+        <button class="btn btn-secondary rounded-circle btn-sm">Sat</button>
+        <button class="btn btn-secondary rounded-circle btn-sm">Sun</button>
+      </div>
+      <div class="d-flex justify-content-between align-items-center border-top border-secondary pt-2">
+        <span>Reminder time</span>
+        <span class="text-secondary">09:00 AM</span>
+      </div>
+    </div>
+
+    <!-- Timer and sessions -->
+    <div class="mb-4">
+      <p class="text-success small fw-semibold mb-1">Timer and sessions</p>
+
+      <div class="py-2 border-bottom border-secondary">
+        <h6 class="fw-normal mb-0">Timer profile</h6>
+        <small class="text-secondary">Set the duration for work and break sessions</small>
+      </div>
+
+      <div class="py-2 border-bottom border-secondary d-flex justify-content-between align-items-center">
+        <div>
+          <h6 class="fw-normal mb-0">Auto start focus</h6>
+          <small class="text-secondary">Start the work session after a break without user interaction</small>
+        </div>
+        <input class="form-check-input" type="checkbox">
+      </div>
+
+      <div class="py-2 border-bottom border-secondary d-flex justify-content-between align-items-center">
+        <div>
+          <h6 class="fw-normal mb-0">Auto start break</h6>
+          <small class="text-secondary">Start the break session after a work session without user interaction</small>
+        </div>
+        <input class="form-check-input" type="checkbox">
+      </div>
+
+      <div class="py-2 border-bottom border-secondary d-flex justify-content-between align-items-center">
+        <div>
+          <h6 class="fw-normal mb-0">Custom start of day</h6>
+          <small class="text-secondary">Defines when the day begins for statistics</small>
+        </div>
+        <span class="text-secondary">05:00 AM</span>
+      </div>
+
+      <div class="py-2 border-bottom border-secondary d-flex justify-content-between align-items-center">
+        <div>
+          <h6 class="fw-normal mb-0">Start of the week</h6>
+        </div>
+        <span class="text-secondary">Monday</span>
+      </div>
+    </div>
+
+    <!-- Display and appearance -->
+    <div>
+      <p class="text-success small fw-semibold mb-1">Display and appearance</p>
+      <div class="d-flex align-items-center py-2">
+        <img src="/dummy.jpeg" alt="icon" class="rounded-circle me-3" style="width:30px; height:30px;">
+        <h6 class="fw-normal mb-0">User interface</h6>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS CDN -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <!-- Bootstrap Icons -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  >
+</body>
+</html>

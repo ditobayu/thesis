@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Account</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#0f1419] text-white min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-sm">
+      <!-- Close Icon -->
+      <div class="flex justify-start mb-6">
+        <button class="text-gray-300 text-2xl font-light hover:text-white">&times;</button>
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-2xl font-bold mb-3">Find your account</h1>
+
+      <!-- Description -->
+      <p class="text-gray-400 text-sm mb-2">
+        Enter your username, email, or mobile number.
+      </p>
+
+      <!-- Help link -->
+      <a href="#" class="text-blue-400 text-sm hover:underline mb-6 inline-block">
+        Can't reset your password?
+      </a>
+
+      <!-- Input -->
+      <input
+        type="text"
+        placeholder="Username, email, or mobile number"
+        class="w-full bg-transparent border border-gray-600 rounded-lg px-4 py-3 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+      />
+
+      <!-- Continue button -->
+      <button
+        class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full py-3 mb-4 transition"
+      >
+        Continue
+      </button>
+
+      <!-- Divider -->
+      <div class="flex items-center my-4">
+        <div class="flex-grow border-t border-gray-700"></div>
+      </div>
+
+      <!-- Facebook login button -->
+      <button
+        class="w-full border border-gray-600 text-white font-medium rounded-full py-3 flex items-center justify-center gap-2 hover:bg-gray-800 transition"
+      >
+        <img src="/dummy.jpeg" alt="Facebook logo" class="w-5 h-5 rounded-full" />
+        Log in with Facebook
+      </button>
+    </div>
+  </body>
+</html>

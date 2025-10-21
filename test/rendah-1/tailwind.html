@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Clock</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col min-h-screen justify-between">
+
+  <!-- Top Bar -->
+  <div class="flex justify-between items-center px-4 pt-4 text-sm text-gray-300">
+    <span>4:12</span>
+    <div class="flex items-center space-x-2">
+      <span>1.73 KB/s</span>
+      <span class="text-xs">📶 🔋</span>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex flex-col items-center text-center mt-8">
+    <h1 class="text-2xl font-medium mb-6">World Clock</h1>
+    <h2 class="text-7xl font-bold tracking-tight">4:12<span class="text-2xl align-top ml-1">AM</span></h2>
+    
+    <div class="mt-4 text-gray-400">
+      <p class="text-sm">Wed, Oct 8</p>
+      <div class="flex justify-center items-center text-sm space-x-2 mt-1">
+        <span>⏰</span>
+        <span>Wed 4:40 AM</span>
+      </div>
+    </div>
+
+    <!-- Location Section -->
+    <div class="w-11/12 bg-gray-800 rounded-2xl p-4 mt-8">
+      <div class="flex justify-between items-center">
+        <div>
+          <p class="text-lg font-semibold">Jakarta</p>
+          <p class="text-sm text-gray-400">-0h</p>
+        </div>
+        <p class="text-3xl font-semibold">4:12<span class="text-sm align-top ml-1">AM</span></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Floating Add Button -->
+  <div class="fixed bottom-24 right-6">
+    <button class="bg-purple-600 rounded-full w-14 h-14 flex items-center justify-center text-3xl shadow-lg">+</button>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="bg-gray-900 border-t border-gray-800 flex justify-around py-3">
+    <button class="flex flex-col items-center text-gray-400 text-sm">
+      <span class="text-lg">⏰</span>
+      <span>Alarms</span>
+    </button>
+    <button class="flex flex-col items-center text-white text-sm">
+      <span class="text-lg">🌐</span>
+      <span>World Clock</span>
+    </button>
+    <button class="flex flex-col items-center text-gray-400 text-sm">
+      <span class="text-lg">⏳</span>
+      <span>Timers</span>
+    </button>
+    <button class="flex flex-col items-center text-gray-400 text-sm">
+      <span class="text-lg">⏱️</span>
+      <span>Stopwatch</span>
+    </button>
+    <button class="flex flex-col items-center text-gray-400 text-sm">
+      <span class="text-lg">🛏️</span>
+      <span>Bedtime</span>
+    </button>
+  </nav>
+
+</body>
+</html>

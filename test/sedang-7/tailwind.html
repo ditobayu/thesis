@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail UI Replica</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Top Bar -->
+  <div class="flex items-center justify-between px-4 py-3">
+    <div class="flex items-center space-x-3">
+      <div class="w-6 h-0.5 bg-white"></div>
+      <h1 class="text-lg font-medium">10:30</h1>
+    </div>
+    <div class="flex items-center space-x-2 text-xs text-gray-300">
+      <span>0.01 KB/s</span>
+      <span>📶</span>
+      <span>🔋99%</span>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="px-4 mb-2">
+    <div class="bg-gray-800 rounded-full flex items-center px-4 py-2">
+      <div class="w-5 h-5 bg-gray-500 rounded-full"></div>
+      <input type="text" placeholder="Search in mail" class="bg-transparent text-gray-400 w-full pl-3 outline-none">
+      <div class="w-7 h-7 bg-purple-500 rounded-full flex items-center justify-center text-white font-medium">D</div>
+    </div>
+  </div>
+
+  <!-- Section Title -->
+  <div class="px-4 mt-2">
+    <h2 class="text-lg font-semibold">Primary</h2>
+  </div>
+
+  <!-- Email List -->
+  <div class="mt-3 space-y-3 px-3">
+
+    <!-- Updates -->
+    <div class="flex justify-between items-center bg-gray-800 p-3 rounded-xl">
+      <div>
+        <p class="text-yellow-400 text-sm font-semibold">Updates</p>
+        <p class="font-medium text-white">GDG Event Platform — New GDG o...</p>
+      </div>
+      <span class="bg-yellow-500 text-gray-900 text-xs px-2 py-0.5 rounded-full font-semibold">65 new</span>
+    </div>
+
+    <!-- ParagonCorp -->
+    <div class="flex items-start justify-between bg-gray-800 p-3 rounded-xl">
+      <div class="flex space-x-3">
+        <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center font-bold">P</div>
+        <div>
+          <p class="font-semibold">ParagonCorp</p>
+          <p class="text-sm text-gray-400 truncate">Do Not Reply: Paragon Corp Selection Infor...</p>
+          <p class="text-xs text-gray-500">Oct 17</p>
+        </div>
+      </div>
+      <span class="text-gray-400 text-xl">☆</span>
+    </div>
+
+    <!-- GDG Event Platform -->
+    <div class="flex items-start justify-between bg-gray-800 p-3 rounded-xl">
+      <div class="flex space-x-3">
+        <img src="/dummy.jpeg" alt="GDG" class="w-8 h-8 rounded-full bg-gray-600">
+        <div>
+          <p class="font-semibold">GDG Event Platform</p>
+          <p class="text-sm text-gray-400 truncate">New GDG on Campus Universitas Sumatra...</p>
+          <p class="text-xs text-gray-500">Oct 13</p>
+        </div>
+      </div>
+      <span class="text-gray-400 text-xl">☆</span>
+    </div>
+
+    <!-- Promotions -->
+    <div class="flex justify-between items-center bg-gray-800 p-3 rounded-xl">
+      <div>
+        <p class="text-green-400 text-sm font-semibold">Promotions</p>
+        <p class="font-medium text-white">Maya☀️ — Dito Mau Switch Career ...</p>
+      </div>
+      <span class="bg-green-500 text-gray-900 text-xs px-2 py-0.5 rounded-full font-semibold">83 new</span>
+    </div>
+
+    <!-- GDG Again -->
+    <div class="flex items-start justify-between bg-gray-800 p-3 rounded-xl">
+      <div class="flex space-x-3">
+        <img src="/dummy.jpeg" alt="GDG" class="w-8 h-8 rounded-full bg-gray-600">
+        <div>
+          <p class="font-semibold">GDG Event Platform</p>
+          <p class="text-sm text-gray-400 truncate">New GDG on Campus Universitas Sumatra...</p>
+          <p class="text-xs text-gray-500">Oct 9</p>
+        </div>
+      </div>
+      <span class="text-gray-400 text-xl">☆</span>
+    </div>
+
+    <!-- Recruitment Paragon Corp -->
+    <div class="flex items-start justify-between bg-gray-800 p-3 rounded-xl">
+      <div class="flex space-x-3">
+        <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center font-bold">R</div>
+        <div>
+          <p class="font-semibold">Recruitment Paragon Corp</p>
+          <p class="text-sm text-gray-400 truncate">&lt;RECRUITMENT&gt; Written Test ParagonCorp...</p>
+          <p class="text-xs text-gray-500">Sep 22</p>
+        </div>
+      </div>
+      <span class="text-gray-400 text-xl">☆</span>
+    </div>
+
+    <!-- Xendit Emails -->
+    <div class="flex items-start justify-between bg-gray-800 p-3 rounded-xl">
+      <div class="flex space-x-3">
+        <img src="/dummy.jpeg" alt="Xendit" class="w-8 h-8 rounded-full bg-gray-600">
+        <div>
+          <p class="font-semibold">Xendit</p>
+          <p class="text-sm text-gray-400 truncate">Segera lakukan pembayaran untuk pes...</p>
+          <p class="text-xs text-gray-500">Sep 18</p>
+        </div>
+      </div>
+      <span class="text-gray-400 text-xl">☆</span>
+    </div>
+
+    <div class="flex items-start justify-between bg-gray-800 p-3 rounded-xl">
+      <div class="flex space-x-3">
+        <img src="/dummy.jpeg" alt="Xendit" class="w-8 h-8 rounded-full bg-gray-600">
+        <div>
+          <p class="font-semibold">Xendit</p>
+          <p class="text-sm text-gray-400 truncate">Segera lakukan pembayaran untuk pes...</p>
+          <p class="text-xs text-gray-500">Sep 17</p>
+        </div>
+      </div>
+      <span class="text-gray-400 text-xl">☆</span>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="fixed bottom-0 w-full bg-gray-900 border-t border-gray-700 flex justify-between items-center px-6 py-3">
+    <div class="flex items-center space-x-2">
+      <div class="bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded-full">99+</div>
+      <p class="text-gray-300">Mail</p>
+    </div>
+    <button class="bg-blue-600 text-white rounded-full px-5 py-2 font-medium">Compose</button>
+  </div>
+
+</body>
+</html>

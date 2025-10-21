@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - JobStreet Style</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+
+  <!-- Header -->
+  <div class="container py-3">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <div class="text-muted small">2:41 M</div>
+      <div class="d-flex align-items-center">
+        <i class="bi bi-wifi me-2"></i>
+        <i class="bi bi-battery-half"></i>
+      </div>
+    </div>
+
+    <!-- Profile Info -->
+    <div class="text-start">
+      <h5 class="fw-semibold mb-1">Dito Bayu Adhitya</h5>
+      <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill"></i> Malang, East Java</p>
+      <span class="badge rounded-pill bg-secondary">Profile visibility standard</span>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs mt-3 px-3" id="profileTabs">
+    <li class="nav-item">
+      <a class="nav-link active text-light bg-dark border-secondary" href="#">Suggested for you</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light bg-dark border-secondary" href="#">Activity</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light bg-dark border-secondary" href="#">Verifications</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-light bg-dark border-secondary" href="#">Personal</a>
+    </li>
+  </ul>
+
+  <!-- Content Section -->
+  <div class="container my-4">
+
+    <!-- Suggested for you -->
+    <div class="mb-4">
+      <h6 class="fw-bold">Suggested for you</h6>
+      <div class="card bg-secondary bg-opacity-10 border-0 rounded-3 p-3">
+        <p class="mb-2 text-light">Show employers you have the right credentials for the job.</p>
+        <button class="btn btn-outline-light btn-sm rounded-pill">Add licence or certificate</button>
+      </div>
+    </div>
+
+    <!-- Profile Activity -->
+    <div class="mb-4">
+      <h6 class="fw-bold">Profile activity</h6>
+      <div class="card bg-secondary bg-opacity-10 border-0 rounded-3 p-3">
+        <p class="mb-0 text-light">You appeared in 20 searches</p>
+      </div>
+    </div>
+
+    <!-- Verifications -->
+    <div class="mb-5">
+      <h6 class="fw-bold">Verifications</h6>
+      <div class="card bg-secondary bg-opacity-10 border-0 rounded-3 p-3">
+        <p class="mb-3 text-light">Profiles with verifications are more likely to be selected.</p>
+        <button class="btn btn-outline-primary rounded-pill btn-sm">Verify your identity</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand fixed-bottom border-top border-secondary">
+    <ul class="navbar-nav nav-justified w-100">
+      <li class="nav-item text-center">
+        <a href="#" class="nav-link text-light small">
+          <i class="bi bi-house"></i><br>Home
+        </a>
+      </li>
+      <li class="nav-item text-center">
+        <a href="#" class="nav-link text-light small position-relative">
+          <i class="bi bi-bookmark"></i><br>My Activity
+          <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">6</span>
+        </a>
+      </li>
+      <li class="nav-item text-center">
+        <a href="#" class="nav-link text-light small">
+          <i class="bi bi-compass"></i><br>Career
+        </a>
+      </li>
+      <li class="nav-item text-center">
+        <a href="#" class="nav-link text-light small">
+          <i class="bi bi-person"></i><br>Profile
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</body>
+</html>

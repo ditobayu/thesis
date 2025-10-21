@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database Indexing — Day 53</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-gray-200 font-serif">
+    <!-- Container utama -->
+    <div class="max-w-xl mx-auto px-4 py-6 space-y-6">
+      <!-- Tombol kembali -->
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 text-gray-400"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </div>
+
+      <!-- Judul dan info -->
+      <div class="space-y-2">
+        <h1 class="text-2xl sm:text-3xl font-extrabold leading-snug">
+          Database Indexing — Day 53 of 100 Days of Data Engineering, AI and Azure Challenge
+        </h1>
+        <p class="text-sm text-gray-400">5 min read · Feb 2</p>
+      </div>
+
+      <!-- Profil -->
+      <div class="flex items-center gap-3">
+        <img
+          src="/dummy.jpeg"
+          alt="Author"
+          class="w-8 h-8 rounded-full object-cover"
+        />
+        <button
+          class="text-sm font-medium text-gray-200 border border-gray-500 rounded-full px-3 py-1 hover:bg-gray-800 transition"
+        >
+          Karthik
+        </button>
+      </div>
+
+      <!-- Isi artikel -->
+      <div class="space-y-4 leading-relaxed text-gray-300 text-[15px]">
+        <p>
+          Let’s be real — nobody wants to sit around waiting for a query to run while
+          contemplating life choices. That’s where <span class="font-semibold text-gray-100">indexes</span>
+          come to the rescue! Imagine indexes as the Google Maps of your database: instead
+          of aimlessly wandering through every row, they provide a fast, optimized path to
+          your data.
+        </p>
+
+        <p>
+          But there’s more to indexing than just speeding things up. Let’s dive into the
+          nitty-gritty with a touch of humor to keep things interesting.
+        </p>
+
+        <p>
+          An index in SQL is a structured ...
+        </p>
+      </div>
+
+      <!-- Footer icons -->
+      <div class="flex items-center justify-between border-t border-gray-700 pt-4">
+        <button class="flex items-center gap-2 text-gray-400 hover:text-gray-200 transition">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 20.25c4.556 0 8.25-3.694 8.25-8.25S16.556 3.75 12 3.75 3.75 7.444 3.75 12 7.444 20.25 12 20.25z"
+            />
+          </svg>
+          <span class="text-sm">--</span>
+        </button>
+
+        <div class="flex items-center gap-6 text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 12h15m-7.5 7.5V4.5" />
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.5 12.75l7.5-7.5 7.5 7.5M12 5.25v13.5" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

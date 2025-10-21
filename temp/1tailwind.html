@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp UI Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Header -->
+  <div class="flex items-center justify-between px-4 py-3 bg-gray-900">
+    <h1 class="text-xl font-semibold">WhatsApp</h1>
+    <div class="flex items-center space-x-4">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8h18M3 16h18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="px-4 py-2">
+    <input 
+      type="text" 
+      placeholder="Ask Meta AI or Search" 
+      class="w-full rounded-lg bg-gray-800 px-4 py-2 text-sm text-gray-300 placeholder-gray-500 focus:outline-none"
+    />
+  </div>
+
+  <!-- Archived -->
+  <div class="px-4 py-2 text-sm text-gray-400 flex items-center space-x-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V7a2 2 0 00-2-2h-6l-2-2H6a2 2 0 00-2 2v6"/>
+    </svg>
+    <span>Archived</span>
+    <span class="ml-auto text-gray-400">7</span>
+  </div>
+
+  <!-- Chat List -->
+  <div class="divide-y divide-gray-800">
+    <!-- Chat item -->
+    <div class="flex items-center px-4 py-3">
+      <img src="/dummy.jpeg" alt="profile" class="w-12 h-12 rounded-full">
+      <div class="flex-1 ml-3">
+        <div class="flex justify-between">
+          <h2 class="font-semibold">Notes</h2>
+          <span class="text-xs text-gray-400">10:25 AM</span>
+        </div>
+        <p class="text-sm text-gray-400 truncate">You: https://filkom.ub.ac.id/2025/08...</p>
+      </div>
+    </div>
+
+    <div class="flex items-center px-4 py-3">
+      <img src="/dummy.jpeg" alt="profile" class="w-12 h-12 rounded-full">
+      <div class="flex-1 ml-3">
+        <div class="flex justify-between">
+          <h2 class="font-semibold">Silomba.id</h2>
+          <span class="text-xs text-gray-400">8/13/25</span>
+        </div>
+        <p class="text-sm text-gray-400 truncate">You: baiklah</p>
+      </div>
+    </div>
+
+    <div class="flex items-center px-4 py-3">
+      <img src="/dummy.jpeg" alt="profile" class="w-12 h-12 rounded-full">
+      <div class="flex-1 ml-3">
+        <div class="flex justify-between">
+          <h2 class="font-semibold">Mas Dwinanto Hermawan</h2>
+          <span class="text-xs text-green-500">2:27 PM</span>
+        </div>
+        <p class="text-sm text-gray-300 truncate">sangkain hanya untuk BLP</p>
+      </div>
+      <span class="ml-2 bg-green-600 text-xs font-semibold text-white px-2 py-1 rounded-full">6</span>
+    </div>
+
+    <div class="flex items-center px-4 py-3">
+      <img src="/dummy.jpeg" alt="profile" class="w-12 h-12 rounded-full">
+      <div class="flex-1 ml-3">
+        <div class="flex justify-between">
+          <h2 class="font-semibold">ferdinan Gay</h2>
+          <span class="text-xs text-gray-400">1:58 PM</span>
+        </div>
+        <p class="text-sm text-gray-300 truncate">pret</p>
+      </div>
+    </div>
+
+    <div class="flex items-center px-4 py-3">
+      <img src="/dummy.jpeg" alt="profile" class="w-12 h-12 rounded-full">
+      <div class="flex-1 ml-3">
+        <div class="flex justify-between">
+          <h2 class="font-semibold">Nazwa</h2>
+          <span class="text-xs text-gray-400">1:57 PM</span>
+        </div>
+        <p class="text-sm text-gray-300 truncate">iyaa, gapapa</p>
+      </div>
+    </div>
+
+    <div class="flex items-center px-4 py-3">
+      <img src="/dummy.jpeg" alt="profile" class="w-12 h-12 rounded-full">
+      <div class="flex-1 ml-3">
+        <div class="flex justify-between">
+          <h2 class="font-semibold">Pemuja GKM</h2>
+          <span class="text-xs text-gray-400">11:38 AM</span>
+        </div>
+        <p class="text-sm text-gray-300 truncate">Ghatfan: NT wkwk</p>
+      </div>
+    </div>
+
+    <div class="flex items-center px-4 py-3">
+      <img src="/dummy.jpeg" alt="profile" class="w-12 h-12 rounded-full">
+      <div class="flex-1 ml-3">
+        <div class="flex justify-between">
+          <h2 class="font-semibold">BATAS | GROUP</h2>
+          <span class="text-xs text-green-500">1:40 PM</span>
+        </div>
+        <p class="text-sm text-gray-400 truncate">+62 817-6540-123: Tim, ini vest siapa...</p>
+      </div>
+      <span class="ml-2 bg-green-600 text-xs font-semibold text-white px-2 py-1 rounded-full">32</span>
+    </div>
+
+    <div class="flex items-center px-4 py-3">
+      <img src="/dummy.jpeg" alt="profile" class="w-12 h-12 rounded-full">
+      <div class="flex-1 ml-3">
+        <div class="flex justify-between">
+          <h2 class="font-semibold">Arito Ti</h2>
+          <span class="text-xs text-gray-400">Belum</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Nav -->
+  <div class="fixed bottom-0 inset-x-0 bg-gray-900 border-t border-gray-800 flex justify-around py-2">
+    <div class="flex flex-col items-center text-green-500">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+      <span class="text-xs">Chats</span>
+    </div>
+    <div class="flex flex-col items-center text-gray-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+      </svg>
+      <span class="text-xs">Updates</span>
+    </div>
+    <div class="flex flex-col items-center text-gray-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h13v6"/>
+      </svg>
+      <span class="text-xs">Communities</span>
+    </div>
+    <div class="flex flex-col items-center text-gray-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12h3m-6 0h.01M12 12h.01M9 12h.01"/>
+      </svg>
+      <span class="text-xs">Calls</span>
+    </div>
+  </div>
+
+</body>
+</html>

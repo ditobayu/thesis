@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0f172a] text-white font-sans min-h-screen">
+
+  <!-- Header -->
+  <div class="flex items-center justify-between px-4 pt-3">
+    <span class="text-sm text-gray-300">2:41 M</span>
+    <div class="flex items-center gap-2 text-gray-300 text-xs">
+      <span>2.69 KB/s</span>
+      <span class="text-lg">📶</span>
+      <span class="text-lg">🔋67%</span>
+    </div>
+  </div>
+
+  <!-- Profile Section -->
+  <section class="px-5 mt-5">
+    <div class="flex items-center justify-between">
+      <div>
+        <h1 class="text-xl font-semibold">Dito Bayu Adhitya</h1>
+        <p class="text-gray-400 text-sm">Malang, East Java</p>
+      </div>
+      <img src="/dummy.jpeg" alt="profile" class="w-10 h-10 rounded-full object-cover">
+    </div>
+
+    <div class="mt-3 inline-flex items-center gap-2 bg-gray-700/50 px-3 py-1 rounded-full text-sm">
+      <span>👁️</span>
+      <span>Profile visibility standard</span>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <nav class="mt-6 px-4 flex text-gray-400 text-sm border-b border-gray-700">
+    <button class="text-white font-semibold border-b-2 border-pink-500 pb-2 px-3">Suggested for you</button>
+    <button class="pb-2 px-3">Activity</button>
+    <button class="pb-2 px-3">Verifications</button>
+    <button class="pb-2 px-3">Personal</button>
+  </nav>
+
+  <!-- Suggested Section -->
+  <section class="px-5 mt-5 space-y-4">
+    <h2 class="font-semibold text-lg">Suggested for you</h2>
+
+    <div class="bg-gray-800 p-4 rounded-2xl">
+      <p class="text-gray-300 text-sm mb-2">
+        Show employers you have the right credentials for the job.
+      </p>
+      <button class="flex items-center gap-2 text-blue-400 font-medium">
+        <span>➕</span> Add licence or certificate
+      </button>
+    </div>
+
+    <div class="bg-gray-800 p-4 rounded-2xl">
+      <p class="text-gray-300 text-sm mb-2">
+        Add more information to make your profile stand out.
+      </p>
+      <button class="flex items-center gap-2 text-blue-400 font-medium">
+        <span>➕</span> Add more details
+      </button>
+    </div>
+  </section>
+
+  <!-- Profile Activity -->
+  <section class="px-5 mt-6">
+    <h2 class="font-semibold text-lg">Profile activity</h2>
+    <div class="bg-gray-800 p-4 rounded-2xl mt-2">
+      <p class="text-gray-300 text-sm">You appeared in 20 searches</p>
+    </div>
+  </section>
+
+  <!-- Verifications -->
+  <section class="px-5 mt-6 pb-20">
+    <h2 class="font-semibold text-lg">Verifications</h2>
+    <div class="bg-gray-800 p-4 rounded-2xl mt-2">
+      <p class="text-gray-300 text-sm mb-3">
+        Profiles with verifications are more likely to be selected.
+      </p>
+      <button class="bg-blue-600 text-white font-medium px-4 py-2 rounded-xl text-sm">
+        Verify your identity
+      </button>
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <nav class="fixed bottom-0 left-0 w-full bg-gray-900 border-t border-gray-800 flex justify-around py-3 text-gray-400 text-sm">
+    <button class="flex flex-col items-center">
+      <span>🏠</span>
+      <span>Home</span>
+    </button>
+    <button class="flex flex-col items-center relative">
+      <span>📑</span>
+      <span>My Activity</span>
+      <span class="absolute top-0 right-2 bg-pink-600 text-white text-xs px-1 rounded-full">6</span>
+    </button>
+    <button class="flex flex-col items-center">
+      <span>🧭</span>
+      <span>Career</span>
+    </button>
+    <button class="flex flex-col items-center text-white">
+      <span>👤</span>
+      <span>Profile</span>
+    </button>
+  </nav>
+
+</body>
+</html>

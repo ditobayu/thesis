@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tag Quiz</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1c1b3b] text-white min-h-screen flex flex-col justify-between font-sans">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center px-4 pt-4">
+    <div class="text-sm opacity-75">2:38 ⏳</div>
+    <div class="flex space-x-1">
+      <div class="w-5 h-5 bg-pink-500 rounded-full"></div>
+      <div class="w-5 h-5 bg-pink-500 rounded-full"></div>
+      <div class="w-5 h-5 bg-pink-500 rounded-full"></div>
+      <div class="w-5 h-5 bg-pink-500 rounded-full"></div>
+      <div class="w-5 h-5 bg-pink-500 rounded-full"></div>
+    </div>
+    <div class="text-sm opacity-75">📶🔋</div>
+  </header>
+
+  <!-- Main content -->
+  <main class="flex-1 flex flex-col justify-center px-6 space-y-6">
+    <div class="bg-[#2c2b55] p-5 rounded-2xl space-y-4 shadow-lg">
+      <p class="text-base leading-relaxed">
+        In HTML, the keywords of some tags are obvious, but there are some tags that use a shortened form. 
+        For example, we use <span class="font-mono bg-[#3b3969] px-1 py-0.5 rounded">&lt;p&gt;</span> for a paragraph.
+      </p>
+
+      <p class="text-base font-semibold">
+        Which one of these HTML tags creates a <span class="font-bold">paragraph</span>?
+      </p>
+
+      <div class="text-sm text-gray-300 flex items-center space-x-1">
+        <span>ℹ️</span>
+        <span>Tap the correct answer</span>
+      </div>
+
+      <!-- Options -->
+      <div class="flex flex-col space-y-3 pt-3">
+        <button class="w-full bg-[#3b3969] text-white py-3 rounded-xl font-mono text-lg hover:bg-[#4a4780] transition">
+          &lt;button&gt;
+        </button>
+        <button class="w-full bg-[#3b3969] text-white py-3 rounded-xl font-mono text-lg hover:bg-[#4a4780] transition">
+          &lt;p&gt;
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Submit Button -->
+  <footer class="px-6 pb-6">
+    <button class="w-full bg-[#3b3969] text-gray-400 py-3 rounded-xl uppercase tracking-wide font-semibold hover:bg-[#4a4780] transition">
+      Submit
+    </button>
+  </footer>
+
+</body>
+</html>

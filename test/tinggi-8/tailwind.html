@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Studio - Audience</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col font-sans">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 py-3 border-b border-gray-800">
+    <div class="flex items-center space-x-2">
+      <img src="/dummy.jpeg" alt="YouTube logo" class="w-6 h-6 rounded-sm bg-red-600" />
+      <span class="font-semibold text-lg">Studio</span>
+    </div>
+    <div class="flex items-center space-x-4">
+      <button class="text-gray-400 hover:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg>
+      </button>
+      <div class="relative">
+        <span class="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405M19 13V7a2 2 0 00-2-2h-1.5a1.5 1.5 0 010-3H12a9 9 0 00-9 9v6a9 9 0 009 9h3a1.5 1.5 0 000-3H17a2 2 0 002-2z" />
+        </svg>
+      </div>
+      <img src="/dummy.jpeg" alt="profile" class="w-7 h-7 rounded-full" />
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="flex justify-around text-gray-400 text-sm border-b border-gray-800">
+    <button class="py-3 hover:text-white">Overview</button>
+    <button class="py-3 hover:text-white">Content</button>
+    <button class="py-3 text-white border-b-2 border-white">Audience</button>
+    <button class="py-3 hover:text-white">Trends</button>
+  </nav>
+
+  <!-- Content Area -->
+  <main class="flex-1 overflow-y-auto px-4 py-6 space-y-5">
+    
+    <!-- Monthly Audience -->
+    <section class="bg-[#111] rounded-2xl p-4">
+      <h2 class="text-gray-300 text-sm mb-2">Monthly audience</h2>
+      <div class="text-3xl font-semibold mb-2">8</div>
+      <div class="h-24 flex items-end">
+        <div class="w-full border-t border-gray-700 flex items-end">
+          <svg viewBox="0 0 100 40" class="w-full h-20">
+            <polyline fill="none" stroke="#a855f7" stroke-width="2" 
+              points="0,30 10,20 20,15 30,15 40,18 50,25 60,28 70,30 80,32 90,30 100,28" />
+          </svg>
+        </div>
+      </div>
+      <div class="flex justify-between text-gray-500 text-xs mt-1">
+        <span>Sep 22</span>
+        <span>Oct 19</span>
+      </div>
+    </section>
+
+    <!-- Subscribers -->
+    <section class="bg-[#111] rounded-2xl p-4">
+      <h2 class="text-gray-300 text-sm mb-2">Subscribers</h2>
+      <div class="flex items-center space-x-2">
+        <span class="text-3xl font-semibold">-1</span>
+        <span class="text-green-500 text-xs">66% more</span>
+      </div>
+      <div class="h-16 mt-2">
+        <svg viewBox="0 0 100 40" class="w-full h-full">
+          <polyline fill="none" stroke="#9333ea" stroke-width="2" 
+            points="0,30 10,30 20,25 30,25 40,27 50,30 60,30 70,32 80,35 90,35 100,35" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Audience by Watch Behavior -->
+    <section class="bg-[#111] rounded-2xl p-4">
+      <h2 class="text-gray-300 text-sm mb-2">Audience by watch behavior</h2>
+      <p class="text-gray-500 text-xs mb-3">Monthly audience • Oct 19, 2025</p>
+      <div class="bg-gray-900 rounded-xl text-gray-400 text-center py-3 text-sm">
+        <p>Not enough data to show this report</p>
+      </div>
+    </section>
+
+    <!-- Popular with new viewers -->
+    <section class="bg-[#111] rounded-2xl p-4">
+      <h2 class="text-gray-300 text-sm mb-2">Popular with new viewers</h2>
+      <p class="text-gray-500 text-xs mb-3">Views • Last 28 days</p>
+      <div class="bg-gray-900 rounded-xl text-gray-400 text-center py-3 text-sm">
+        <p>Nothing to show for these dates</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <footer class="flex justify-around items-center border-t border-gray-800 bg-black py-2 text-gray-400 text-xs">
+    <button class="flex flex-col items-center hover:text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h18M3 6h18M3 18h18" />
+      </svg>
+      Dashboard
+    </button>
+    <button class="flex flex-col items-center hover:text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553 2.276A2 2 0 0121 14.118v.764a2 2 0 01-1.447 1.842L15 19v-9zM3 5a2 2 0 012-2h8a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
+      </svg>
+      Content
+    </button>
+    <button class="flex flex-col items-center text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17a4 4 0 100-8 4 4 0 000 8z" />
+      </svg>
+      Analytics
+    </button>
+    <button class="flex flex-col items-center hover:text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7m-4-3h8" />
+      </svg>
+      Community
+    </button>
+    <button class="flex flex-col items-center hover:text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-4.418 0-8 1.79-8 4s3.582 4 8 4 8-1.79 8-4-3.582-4-8-4z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12v5a2 2 0 002 2h12a2 2 0 002-2v-5" />
+      </svg>
+      Earn
+    </button>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkedIn Jobs UI Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 py-3 border-b">
+    <div class="flex items-center space-x-3">
+      <img src="/dummy.jpeg" alt="Profile" class="w-10 h-10 rounded-full object-cover" />
+      <h1 class="text-xl font-semibold">Jobs</h1>
+    </div>
+    <div class="flex items-center space-x-2">
+      <button class="text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Search bar -->
+  <div class="px-4 py-2">
+    <input type="text" placeholder="Search jobs"
+      class="w-full border rounded-full py-2 px-4 text-sm focus:outline-none" />
+  </div>
+
+  <!-- Tabs -->
+  <div class="flex justify-around px-2 py-2 border-b">
+    <button class="text-sm font-medium px-3 py-1 border border-gray-300 rounded-full">Preferences</button>
+    <button class="text-sm font-medium px-3 py-1 border border-gray-300 rounded-full">My jobs</button>
+    <button class="text-sm font-medium px-3 py-1 border border-gray-300 rounded-full">Start hiring with AI</button>
+  </div>
+
+  <!-- Top job picks -->
+  <section class="px-4 py-3">
+    <h2 class="text-lg font-semibold mb-2">Top job picks for you</h2>
+    <p class="text-sm text-gray-500 mb-4">
+      Based on your profile, preferences, and activity like applies, searches, and saves
+    </p>
+
+    <!-- Job Card 1 -->
+    <div class="border rounded-xl p-3 mb-3 shadow-sm">
+      <div class="flex items-start justify-between">
+        <div class="flex items-center space-x-2">
+          <img src="/dummy.jpeg" alt="Company" class="w-10 h-10 rounded-md" />
+          <div>
+            <h3 class="font-semibold">Software Developer – SCG Indonesia</h3>
+            <p class="text-sm text-gray-500">SCG • Jakarta, Indonesia (On-site)</p>
+          </div>
+        </div>
+        <button class="text-gray-400">
+          ✕
+        </button>
+      </div>
+      <div class="mt-2 text-sm text-gray-600">
+        <p>7 school alumni work here</p>
+      </div>
+      <div class="mt-2 flex items-center text-xs text-gray-500 space-x-2">
+        <span>Viewed</span>
+        <span>•</span>
+        <span>Promoted</span>
+        <span>•</span>
+        <span class="text-blue-600 font-medium">Easy Apply</span>
+      </div>
+    </div>
+
+    <!-- Job Card 2 -->
+    <div class="border rounded-xl p-3 mb-3 shadow-sm">
+      <div class="flex items-start justify-between">
+        <div class="flex items-center space-x-2">
+          <img src="/dummy.jpeg" alt="Company" class="w-10 h-10 rounded-md" />
+          <div>
+            <h3 class="font-semibold">Full Stack Engineer</h3>
+            <p class="text-sm text-gray-500">Maybank • Jakarta, Indonesia (On-site)</p>
+          </div>
+        </div>
+        <button class="text-gray-400">
+          ✕
+        </button>
+      </div>
+      <div class="mt-2 text-sm text-green-600 flex items-center space-x-1">
+        <span>✔</span>
+        <span>Actively reviewing applicants</span>
+      </div>
+      <div class="mt-2 flex items-center text-xs text-gray-500 space-x-2">
+        <span>Promoted</span>
+        <span>•</span>
+        <span class="text-blue-600 font-medium">Easy Apply</span>
+      </div>
+    </div>
+
+    <!-- Job Card 3 -->
+    <div class="border rounded-xl p-3 mb-3 shadow-sm">
+      <div class="flex items-start justify-between">
+        <div class="flex items-center space-x-2">
+          <img src="/dummy.jpeg" alt="Company" class="w-10 h-10 rounded-md" />
+          <div>
+            <h3 class="font-semibold">Fullstack Developer</h3>
+            <p class="text-sm text-gray-500">PT. ASTRA INTERNATIONAL TBK • Jakarta (On-site)</p>
+          </div>
+        </div>
+        <button class="text-gray-400">
+          ✕
+        </button>
+      </div>
+      <div class="mt-2 text-sm text-gray-600 flex items-center space-x-2">
+        <img src="/dummy.jpeg" class="w-5 h-5 rounded-full" alt="conn1" />
+        <img src="/dummy.jpeg" class="w-5 h-5 rounded-full" alt="conn2" />
+        <span>5 connections work here</span>
+      </div>
+      <div class="mt-2 text-xs text-gray-500">
+        6 months ago
+      </div>
+    </div>
+
+    <div class="text-center">
+      <button class="text-blue-600 font-medium text-sm">Show all →</button>
+    </div>
+  </section>
+
+  <!-- Recent searches -->
+  <section class="px-4 py-3 border-t">
+    <div class="flex justify-between items-center mb-2">
+      <h2 class="text-lg font-semibold">Recent job searches</h2>
+      <button class="text-sm text-gray-500">Clear</button>
+    </div>
+    <ul class="space-y-2">
+      <li class="flex items-center space-x-2 text-sm">
+        <span>🕒</span>
+        <span>philip morris • Internship</span>
+        <span class="text-gray-500">Indonesia</span>
+      </li>
+      <li class="flex items-center space-x-2 text-sm">
+        <span>🕒</span>
+        <span>philip morris</span>
+        <span class="text-gray-500">Indonesia</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Bottom Nav -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-white border-t py-2">
+    <div class="flex justify-around text-gray-600 text-xs">
+      <button class="flex flex-col items-center text-blue-600">
+        <span>🏠</span>
+        <span>Home</span>
+      </button>
+      <button class="flex flex-col items-center">
+        <span>👥</span>
+        <span>My Network</span>
+      </button>
+      <button class="flex flex-col items-center">
+        <span>➕</span>
+        <span>Post</span>
+      </button>
+      <button class="flex flex-col items-center relative">
+        <span>🔔</span>
+        <span>Notifications</span>
+        <span
+          class="absolute top-0 right-3 bg-red-500 text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center">3</span>
+      </button>
+      <button class="flex flex-col items-center">
+        <span>💼</span>
+        <span>Jobs</span>
+      </button>
+    </div>
+  </nav>
+</body>
+</html>

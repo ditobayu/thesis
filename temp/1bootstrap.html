@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WhatsApp UI Clone</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+
+  <!-- Header -->
+  <nav class="navbar bg-dark border-bottom border-secondary">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1 text-light">WhatsApp</span>
+      <div>
+        <button class="btn btn-dark btn-sm"><i class="bi bi-camera"></i></button>
+        <button class="btn btn-dark btn-sm"><i class="bi bi-three-dots-vertical"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Bar -->
+  <div class="container-fluid p-2 border-bottom border-secondary">
+    <div class="input-group">
+      <span class="input-group-text bg-secondary text-light border-0"><i class="bi bi-search"></i></span>
+      <input type="text" class="form-control bg-secondary text-light border-0" placeholder="Ask Meta AI or Search">
+    </div>
+  </div>
+
+  <!-- Chat List -->
+  <div class="list-group list-group-flush">
+    <!-- Chat Item -->
+    <a href="#" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center border-secondary">
+      <img src="/dummy.jpeg" alt="avatar" class="rounded-circle me-3" width="40" height="40">
+      <div class="flex-fill">
+        <div class="d-flex justify-content-between">
+          <h6 class="mb-0">Notes</h6>
+          <small>10:25 AM</small>
+        </div>
+        <small class="text-secondary">You: https://filkom.ub.ac.id/2025/08...</small>
+      </div>
+    </a>
+
+    <a href="#" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center border-secondary">
+      <img src="/dummy.jpeg" alt="avatar" class="rounded-circle me-3" width="40" height="40">
+      <div class="flex-fill">
+        <div class="d-flex justify-content-between">
+          <h6 class="mb-0">Silomba.id</h6>
+          <small>8/13/25</small>
+        </div>
+        <small class="text-secondary">You: baiklah</small>
+      </div>
+    </a>
+
+    <a href="#" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center border-secondary">
+      <img src="/dummy.jpeg" alt="avatar" class="rounded-circle me-3" width="40" height="40">
+      <div class="flex-fill">
+        <div class="d-flex justify-content-between">
+          <h6 class="mb-0">Mas Dwinanto Hermawan</h6>
+          <small class="text-success">2:27 PM</small>
+        </div>
+        <small class="text-secondary">sangkain hanya untuk BLP</small>
+      </div>
+      <span class="badge bg-success rounded-pill ms-2">6</span>
+    </a>
+
+    <a href="#" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center border-secondary">
+      <img src="/dummy.jpeg" alt="avatar" class="rounded-circle me-3" width="40" height="40">
+      <div class="flex-fill">
+        <div class="d-flex justify-content-between">
+          <h6 class="mb-0">ferdinan Gay</h6>
+          <small>1:58 PM</small>
+        </div>
+        <small class="text-secondary">pret</small>
+      </div>
+    </a>
+
+    <a href="#" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center border-secondary">
+      <img src="/dummy.jpeg" alt="avatar" class="rounded-circle me-3" width="40" height="40">
+      <div class="flex-fill">
+        <div class="d-flex justify-content-between">
+          <h6 class="mb-0">Nazwa</h6>
+          <small>1:57 PM</small>
+        </div>
+        <small class="text-secondary">iyaa, gapapa</small>
+      </div>
+    </a>
+
+    <a href="#" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center border-secondary">
+      <img src="/dummy.jpeg" alt="avatar" class="rounded-circle me-3" width="40" height="40">
+      <div class="flex-fill">
+        <div class="d-flex justify-content-between">
+          <h6 class="mb-0">Pemuja GKM</h6>
+          <small>11:38 AM</small>
+        </div>
+        <small class="text-secondary">Ghatfan: NT wkwk</small>
+      </div>
+    </a>
+
+    <a href="#" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center border-secondary">
+      <img src="/dummy.jpeg" alt="avatar" class="rounded-circle me-3" width="40" height="40">
+      <div class="flex-fill">
+        <div class="d-flex justify-content-between">
+          <h6 class="mb-0">BATAS | GROUP</h6>
+          <small>12:00 PM</small>
+        </div>
+        <small class="text-secondary">+62 817-6540-123: Tim, ini vest si...</small>
+      </div>
+      <span class="badge bg-success rounded-pill ms-2">32</span>
+    </a>
+
+    <a href="#" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center border-secondary">
+      <img src="/dummy.jpeg" alt="avatar" class="rounded-circle me-3" width="40" height="40">
+      <div class="flex-fill">
+        <div class="d-flex justify-content-between">
+          <h6 class="mb-0">Arito Ti</h6>
+          <small>—</small>
+        </div>
+        <small class="text-secondary">Belum</small>
+      </div>
+    </a>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="navbar fixed-bottom bg-dark border-top border-secondary">
+    <div class="container-fluid d-flex justify-content-around">
+      <a href="#" class="text-success text-center">
+        <i class="bi bi-chat fs-4"></i><br>
+        <small>Chats</small>
+      </a>
+      <a href="#" class="text-light text-center">
+        <i class="bi bi-circle fs-4"></i><br>
+        <small>Updates</small>
+      </a>
+      <a href="#" class="text-light text-center">
+        <i class="bi bi-people fs-4"></i><br>
+        <small>Communities</small>
+      </a>
+      <a href="#" class="text-light text-center">
+        <i class="bi bi-telephone fs-4"></i><br>
+        <small>Calls</small>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</body>
+</html>

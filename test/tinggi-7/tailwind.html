@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOL/USDT Dashboard</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Header -->
+  <div class="flex items-center justify-between px-4 py-3 border-b border-gray-700">
+    <div class="flex items-center space-x-2">
+      <button class="text-gray-300">&larr;</button>
+      <h1 class="text-lg font-semibold">SOL/USDT</h1>
+      <span class="ml-1 text-gray-400 text-sm">ℹ️</span>
+    </div>
+    <button class="text-gray-400 text-xl">⭐</button>
+  </div>
+
+  <!-- Price Section -->
+  <div class="px-4 py-3">
+    <div class="flex items-end justify-between">
+      <div>
+        <h2 class="text-4xl font-bold text-red-500">184.64</h2>
+        <p class="text-sm text-gray-400">≈Rp 3,077,579.52 <span class="text-red-500">-4.74%</span></p>
+        <span class="inline-block mt-2 bg-green-900 text-green-400 text-xs px-2 py-1 rounded">Layer1_Layer2</span>
+      </div>
+      <div class="text-right text-sm text-gray-400">
+        <p>Harga tinggi: <span class="text-gray-100">194.18</span></p>
+        <p>Harga rendah: <span class="text-gray-100">182.72</span></p>
+        <p>Vol 24 jam (SOL): <span class="text-gray-100">3.06M</span></p>
+        <p>Vol 24 jam (USDT): <span class="text-gray-100">578.46M</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeframe Tabs -->
+  <div class="flex justify-around border-b border-gray-700 text-gray-400 text-sm">
+    <button class="py-2 px-3 border-b-2 border-green-500 text-white">1 jam</button>
+    <button class="py-2 px-3 hover:text-white">15 menit</button>
+    <button class="py-2 px-3 hover:text-white">4 jam</button>
+    <button class="py-2 px-3 hover:text-white">1 hari</button>
+    <button class="py-2 px-3 hover:text-white">Lebih</button>
+  </div>
+
+  <!-- Chart Placeholder -->
+  <div class="h-64 bg-gray-800 flex items-center justify-center">
+    <p class="text-gray-500 text-sm">[Chart Placeholder]</p>
+  </div>
+
+  <!-- Stats Summary -->
+  <div class="px-4 py-3 text-sm text-gray-400 border-t border-gray-700">
+    <div class="flex justify-between">
+      <span>Hari ini:</span><span class="text-red-400">-1.55%</span>
+    </div>
+    <div class="flex justify-between">
+      <span>7 hari:</span><span class="text-red-400">-7.72%</span>
+    </div>
+    <div class="flex justify-between">
+      <span>30 hari:</span><span class="text-red-400">-23.21%</span>
+    </div>
+    <div class="flex justify-between">
+      <span>90 hari:</span><span class="text-red-400">-9.33%</span>
+    </div>
+    <div class="flex justify-between">
+      <span>180 hari:</span><span class="text-green-400">22.44%</span>
+    </div>
+    <div class="flex justify-between">
+      <span>1 tahun:</span><span class="text-green-400">15.49%</span>
+    </div>
+  </div>
+
+  <!-- Order Section -->
+  <div class="px-4 py-3 border-t border-gray-700">
+    <div class="flex items-center justify-between text-sm text-gray-300 mb-2">
+      <button class="font-semibold text-white border-b-2 border-green-500 pb-1">Pesanan</button>
+      <button class="pb-1 hover:text-white">Riwayat</button>
+    </div>
+
+    <div class="flex justify-between text-sm mb-2">
+      <div>
+        <p>Beli</p>
+        <p class="text-green-400 font-semibold">204.151</p>
+      </div>
+      <div class="text-right">
+        <p>Jual</p>
+        <p class="text-red-400 font-semibold">184.64 | 184.65</p>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center text-gray-400 text-sm mb-3">
+      <span>Qty: <span class="text-white">0.01</span></span>
+      <span>Saldo: <span class="text-white">821.328</span></span>
+    </div>
+
+    <div class="flex gap-2">
+      <button class="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-2 rounded-xl">Beli</button>
+      <button class="flex-1 bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-xl">Jual</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="text-center text-xs text-gray-500 py-3">
+    <p>&copy; 2025 SOL/USDT Trading UI Replica</p>
+  </div>
+
+</body>
+</html>

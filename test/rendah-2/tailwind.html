@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Lesson Screen</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white min-h-screen flex flex-col justify-between font-sans">
+
+  <!-- Progress Bar -->
+  <div class="flex items-center justify-center space-x-2 p-4">
+    <div class="h-1 w-16 bg-blue-500 rounded-full"></div>
+    <div class="h-1 w-16 bg-blue-500 rounded-full"></div>
+    <div class="h-1 w-16 bg-blue-200 rounded-full"></div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="px-6 flex-1">
+    <div class="flex justify-between items-center mb-4">
+      <button class="text-3xl text-gray-400 font-light">&times;</button>
+      <div class="flex items-center space-x-4">
+        <button class="text-gray-500 text-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v4.5m-4.5-4.5v4.5M5.25 5.25h13.5a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 16.5v-9a2.25 2.25 0 012.25-2.25z" />
+          </svg>
+        </button>
+        <button class="text-gray-500 text-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 8.25l-4.5 3 4.5 3V8.25z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="text-gray-700 text-base leading-relaxed space-y-4">
+      <p>Python provides an easy approach to object-oriented programming.</p>
+      <p>Object-oriented is an approach used to write programs.</p>
+      <p>Python is a free and open source language.</p>
+      <p>That is, you can read, modify and distribute the source code of Python scripts.</p>
+      <p>It was developed by <strong>Guido van Rossum</strong> and was released in 1991.</p>
+      <p>We would learn about Object Oriented Programming later.</p>
+    </div>
+  </main>
+
+  <!-- Next Button -->
+  <footer class="p-6">
+    <button class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-full text-lg font-semibold">
+      NEXT
+    </button>
+  </footer>
+
+</body>
+</html>

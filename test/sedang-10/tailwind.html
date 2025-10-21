@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Post UI Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans min-h-screen">
+  <!-- Header -->
+  <div class="flex items-center px-4 py-3 border-b border-gray-800">
+    <button class="text-2xl font-bold mr-3">←</button>
+    <h1 class="text-lg font-semibold">Post</h1>
+  </div>
+
+  <!-- Main Post -->
+  <div class="px-4 py-4 border-b border-gray-800">
+    <div class="flex space-x-3">
+      <img src="/dummy.jpeg" alt="Profile" class="w-12 h-12 rounded-full">
+      <div class="flex-1">
+        <div class="flex items-center space-x-1">
+          <span class="font-bold">Roblox Fess</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-sky-500" viewBox="0 0 24 24" fill="currentColor"><path d="M22.5 12.06a10.5 10.5 0 1 1-12.44-10.4 7 7 0 0 0 9.64 9.64 10.45 10.45 0 0 1 2.8.76z"/></svg>
+          <span class="text-gray-500">@roblox_fess</span>
+          <span class="text-gray-500 text-sm">· Automated</span>
+        </div>
+        <p class="mt-2 text-gray-200 leading-relaxed">
+          Tiba-tiba di unconnect sm koneksi, dan sender baru sadar kalo kita lagi pake item aksesoris yang sama.
+          Ini sender dikira ngikutin ga ya? 😌 btw sender jg udah lama beli itemnya !roblox
+        </p>
+        <div class="text-gray-500 text-sm mt-3">
+          10:01 AM · 18 Oct 25 · <span class="text-gray-400">428 Views</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Replies Title -->
+  <div class="px-4 py-2 text-gray-400 text-sm border-b border-gray-800">
+    Most relevant replies
+  </div>
+
+  <!-- Reply 1 -->
+  <div class="px-4 py-4 border-b border-gray-800 flex space-x-3">
+    <img src="/dummy.jpeg" alt="Profile" class="w-10 h-10 rounded-full">
+    <div>
+      <div class="flex items-center space-x-1">
+        <span class="font-semibold">salvation.</span>
+        <span class="text-gray-500 text-sm">@hirnted · 22m</span>
+      </div>
+      <p class="text-gray-200 mt-1">
+        Bodo amat aja nder toh ntuh item pasti dipakai banyak orang apalagi item yang emg pasaran dipakai
+      </p>
+      <div class="flex items-center text-gray-500 text-sm mt-2 space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 9l-2 2m0 0l-2-2m2 2V4m0 7v9" />
+        </svg>
+        <span>42</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reply 2 -->
+  <div class="px-4 py-4 border-b border-gray-800 flex space-x-3">
+    <img src="/dummy.jpeg" alt="Profile" class="w-10 h-10 rounded-full">
+    <div>
+      <div class="flex items-center space-x-1">
+        <span class="font-semibold">cassie</span>
+        <span class="text-gray-500 text-sm">@mafhirue · 24m</span>
+      </div>
+      <p class="text-gray-200 mt-1">
+        cuek aja, yg make item itu juga gak cuma kalian kan...
+      </p>
+      <div class="flex items-center text-gray-500 text-sm mt-2 space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 9l-2 2m0 0l-2-2m2 2V4m0 7v9" />
+        </svg>
+        <span>58</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reply 3 -->
+  <div class="px-4 py-4 border-b border-gray-800 flex space-x-3">
+    <img src="/dummy.jpeg" alt="Profile" class="w-10 h-10 rounded-full">
+    <div>
+      <div class="flex items-center space-x-1">
+        <span class="font-semibold">Fio.</span>
+        <span class="text-gray-500 text-sm">@amtbruk · 24m</span>
+        <span class="text-gray-500 text-xs">Parody account</span>
+      </div>
+      <p class="text-gray-200 mt-1">
+        Ga, Ga usah geer dan lebih baik untuk bodo...
+      </p>
+    </div>
+  </div>
+
+  <!-- Reply Box -->
+  <div class="px-4 py-3 border-t border-gray-800 flex items-center space-x-3">
+    <img src="/dummy.jpeg" alt="Profile" class="w-10 h-10 rounded-full">
+    <input type="text" placeholder="Post your reply" class="flex-1 bg-transparent outline-none text-gray-200 placeholder-gray-500">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+    </svg>
+  </div>
+</body>
+</html>

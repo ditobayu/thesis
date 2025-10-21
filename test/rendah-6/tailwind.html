@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stopwatch</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 flex flex-col justify-between min-h-screen">
+
+  <!-- Header -->
+  <header class="pt-10 text-center">
+    <h1 class="text-xl font-medium text-gray-300">Stopwatch</h1>
+  </header>
+
+  <!-- Stopwatch Display -->
+  <main class="flex flex-col items-center justify-center flex-grow">
+    <div class="text-[64px] font-light tracking-widest text-gray-400 mb-12">
+      00:00.<span class="text-gray-400">00</span>
+    </div>
+
+    <!-- Start Button -->
+    <button class="bg-purple-800 hover:bg-purple-700 text-purple-200 text-lg font-medium px-20 py-4 rounded-full">
+      Start
+    </button>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="bg-gray-900 border-t border-gray-800 flex justify-around items-center py-3">
+    <div class="flex flex-col items-center text-gray-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6h4m5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <span class="text-xs">Alarms</span>
+    </div>
+    <div class="flex flex-col items-center text-gray-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.21 0-4 1.79-4 4h8c0-2.21-1.79-4-4-4z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12a8 8 0 0116 0 8 8 0 01-16 0z" />
+      </svg>
+      <span class="text-xs">World Clock</span>
+    </div>
+    <div class="flex flex-col items-center text-gray-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14H4v6h6v-6zM20 4h-6v6h6V4z" />
+      </svg>
+      <span class="text-xs">Timers</span>
+    </div>
+    <div class="flex flex-col items-center text-purple-400">
+      <div class="bg-gray-700 rounded-full p-2 mb-1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <span class="text-xs">Stopwatch</span>
+    </div>
+    <div class="flex flex-col items-center text-gray-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 11h18M9 15h6m-3 4h.01" />
+      </svg>
+      <span class="text-xs">Bedtime</span>
+    </div>
+  </nav>
+
+</body>
+</html>

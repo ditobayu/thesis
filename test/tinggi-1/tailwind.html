@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universitas Brawijaya - Reviews</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="p-4 border-b border-gray-200">
+    <div class="flex items-center justify-between">
+      <h1 class="text-lg font-semibold truncate">Universitas Brawijaya</h1>
+      <div class="flex items-center gap-2">
+        <button class="p-2 rounded-full hover:bg-gray-100">
+          🔊
+        </button>
+        <button class="p-2 rounded-full hover:bg-gray-100">🔖</button>
+        <button class="p-2 rounded-full hover:bg-gray-100">🔗</button>
+        <button class="p-2 rounded-full hover:bg-gray-100">✖️</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tabs -->
+  <nav class="flex justify-around border-b border-gray-200 text-sm">
+    <button class="py-3 font-medium text-gray-500">Overview</button>
+    <button class="py-3 font-medium text-gray-500">Directory</button>
+    <button class="py-3 font-medium text-blue-600 border-b-2 border-blue-600">Reviews</button>
+    <button class="py-3 font-medium text-gray-500">Photos</button>
+    <button class="py-3 font-medium text-gray-500">Updates</button>
+  </nav>
+
+  <!-- Filter Section -->
+  <section class="p-4">
+    <h2 class="font-semibold text-gray-700 mb-2">Filter by</h2>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">college students 120</span>
+      <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">lectures 120</span>
+      <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">alma mater 17</span>
+      <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">traffic jams 17</span>
+      <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">land 16</span>
+      <span class="px-3 py-1 bg-gray-100 text-sm rounded-full">+5</span>
+    </div>
+  </section>
+
+  <!-- Rating Summary -->
+  <section class="px-4 pb-4 border-b border-gray-200">
+    <div class="flex items-center gap-4">
+      <div>
+        <p class="text-4xl font-bold text-gray-800">4.7</p>
+        <p class="text-yellow-500 text-lg">★★★★★</p>
+        <p class="text-gray-500 text-sm">(5,709)</p>
+      </div>
+      <div class="flex-1">
+        <div class="space-y-1">
+          <div class="w-full bg-gray-100 rounded h-2">
+            <div class="bg-yellow-400 h-2 rounded" style="width: 90%"></div>
+          </div>
+          <div class="w-full bg-gray-100 rounded h-2">
+            <div class="bg-yellow-400 h-2 rounded" style="width: 10%"></div>
+          </div>
+          <div class="w-full bg-gray-100 rounded h-2">
+            <div class="bg-yellow-400 h-2 rounded" style="width: 5%"></div>
+          </div>
+          <div class="w-full bg-gray-100 rounded h-2">
+            <div class="bg-yellow-400 h-2 rounded" style="width: 2%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rate and Review -->
+  <section class="p-4 border-b border-gray-200">
+    <h3 class="font-semibold mb-2">Rate and review</h3>
+    <div class="flex items-center gap-3">
+      <img src="/dummy.jpeg" alt="profile" class="w-10 h-10 rounded-full object-cover" />
+      <div class="flex gap-1 text-gray-400 text-2xl">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sort by -->
+  <section class="p-4 border-b border-gray-200">
+    <h4 class="font-semibold mb-2">Sort by</h4>
+    <div class="flex flex-wrap gap-2">
+      <button class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">Most relevant</button>
+      <button class="px-3 py-1 bg-gray-100 text-sm rounded-full">Newest</button>
+      <button class="px-3 py-1 bg-gray-100 text-sm rounded-full">Highest</button>
+      <button class="px-3 py-1 bg-gray-100 text-sm rounded-full">Lowest</button>
+    </div>
+  </section>
+
+  <!-- Review Item -->
+  <section class="p-4 space-y-3">
+    <div class="flex items-start gap-3">
+      <img src="/dummy.jpeg" alt="reviewer" class="w-10 h-10 rounded-full object-cover" />
+      <div>
+        <div class="flex items-center justify-between">
+          <h5 class="font-semibold text-sm">Sagela gorontalo Riyadh</h5>
+          <span class="text-xs text-gray-400">a month ago</span>
+        </div>
+        <p class="text-xs text-gray-500 mb-1">Local Guide • 92 reviews</p>
+        <p class="text-yellow-500 text-sm">★★★★★</p>
+        <p class="text-gray-700 text-sm mt-1">
+          Kampus besar dan luas. Perlu tenaga untuk menjelajahi. Security dan petugas layanan lainnya ramah dan informatif.
+          Meski kadang kesulitan mencerna arti ...
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Actions -->
+  <footer class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-2 flex justify-around">
+    <button class="flex flex-col items-center text-blue-600 text-sm">
+      <span>📍</span>
+      <span>Call</span>
+    </button>
+    <button class="flex flex-col items-center text-gray-600 text-sm">
+      <span>🧭</span>
+      <span>Directory</span>
+    </button>
+    <button class="flex flex-col items-center text-gray-600 text-sm">
+      <span>💾</span>
+      <span>Save</span>
+    </button>
+  </footer>
+
+</body>
+</html>

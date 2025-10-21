@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-purple-200 to-white flex items-center justify-center">
+    <div class="w-full max-w-sm bg-white rounded-3xl shadow-lg p-8 mx-4">
+      <!-- Header -->
+      <h1 class="text-3xl font-semibold text-center text-purple-500 mb-10">Sign In</h1>
+
+      <!-- Form -->
+      <form>
+        <!-- Username -->
+        <div class="mb-6">
+          <label for="username" class="block text-gray-500 mb-2">Username</label>
+          <input
+            type="text"
+            id="username"
+            class="w-full border-b border-gray-300 focus:outline-none focus:border-purple-500 py-2"
+            placeholder="Username"
+          />
+        </div>
+
+        <!-- Password -->
+        <div class="mb-6 relative">
+          <label for="password" class="block text-gray-500 mb-2">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="w-full border-b border-gray-300 focus:outline-none focus:border-purple-500 py-2 pr-10"
+            placeholder="Password"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="gray"
+            class="w-5 h-5 absolute right-2 top-9 cursor-pointer"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.98 8.223a10.477 10.477 0 011.684-1.987C7.907 4.214 9.878 3.25 12 3.25c2.122 0 4.093.964 6.336 2.986a10.474 10.474 0 011.684 1.987 10.455 10.455 0 010 7.554 10.476 10.476 0 01-1.684 1.987C16.093 19.786 14.122 20.75 12 20.75c-2.122 0-4.093-.964-6.336-2.986a10.477 10.477 0 01-1.684-1.987 10.455 10.455 0 010-7.554z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+        </div>
+
+        <!-- Login Button -->
+        <button
+          type="submit"
+          class="w-full bg-purple-500 text-white py-3 rounded-full shadow-md hover:bg-purple-600 transition mb-4"
+        >
+          Login
+        </button>
+
+        <!-- Forget Password -->
+        <div class="text-center mb-6">
+          <a href="#" class="text-gray-600 hover:underline">Forget Password?</a>
+        </div>
+
+        <!-- Sign Up -->
+        <p class="text-center text-gray-400 text-sm mb-8">
+          Don’t have an account?
+          <a href="#" class="text-purple-500 font-medium hover:underline">Sign Up</a>
+        </p>
+
+        <!-- Cancel -->
+        <p class="text-center text-gray-700 font-medium cursor-pointer hover:underline">
+          Cancel
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

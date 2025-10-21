@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings UI</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-gray-100 font-sans min-h-screen">
+  <!-- Header -->
+  <div class="flex items-center justify-between px-4 pt-6">
+    <span class="text-gray-400 text-sm">10:29</span>
+    <div class="flex items-center space-x-2 text-xs text-gray-400">
+      <span>0.41 KB/s</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+      </svg>
+      <span>99%</span>
+    </div>
+  </div>
+
+  <!-- Title -->
+  <div class="px-4 mt-6 flex items-center space-x-3">
+    <button class="text-2xl text-gray-300">&larr;</button>
+    <h1 class="text-2xl font-semibold">Settings</h1>
+  </div>
+
+  <!-- Content -->
+  <div class="px-6 mt-6 space-y-8">
+    <!-- Productivity reminder -->
+    <div>
+      <h2 class="text-sm text-green-400 font-medium mb-2">Productivity reminder</h2>
+      <p class="text-lg font-medium mb-3">Days of the week</p>
+      <div class="flex space-x-3 mb-3">
+        <div class="bg-gray-700 text-gray-300 rounded-full px-4 py-2 text-sm">Mon</div>
+        <div class="bg-gray-700 text-gray-300 rounded-full px-4 py-2 text-sm">Tue</div>
+        <div class="bg-gray-700 text-gray-300 rounded-full px-4 py-2 text-sm">Wed</div>
+        <div class="bg-gray-700 text-gray-300 rounded-full px-4 py-2 text-sm">Thu</div>
+        <div class="bg-gray-700 text-gray-300 rounded-full px-4 py-2 text-sm">Fri</div>
+        <div class="bg-gray-700 text-gray-300 rounded-full px-4 py-2 text-sm">Sat</div>
+        <div class="bg-gray-700 text-gray-300 rounded-full px-4 py-2 text-sm">Sun</div>
+      </div>
+      <div class="flex justify-between items-center text-gray-400 text-base">
+        <span>Reminder time</span>
+        <span class="text-gray-500">09:00 AM</span>
+      </div>
+    </div>
+
+    <!-- Timer and sessions -->
+    <div>
+      <h2 class="text-sm text-green-400 font-medium mb-2">Timer and sessions</h2>
+
+      <div class="space-y-6">
+        <div>
+          <p class="text-lg font-medium">Timer profile</p>
+          <p class="text-gray-400 text-sm">Set the duration for work and break sessions</p>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-lg font-medium">Auto start focus</p>
+            <p class="text-gray-400 text-sm">Start the work session after a break without user interaction</p>
+          </div>
+          <div class="w-5 h-5 border border-gray-400 rounded-sm"></div>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-lg font-medium">Auto start break</p>
+            <p class="text-gray-400 text-sm">Start the break session after a work session without user interaction</p>
+          </div>
+          <div class="w-5 h-5 border border-gray-400 rounded-sm"></div>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-lg font-medium">Custom start of day</p>
+            <p class="text-gray-400 text-sm">Defines when the day begins for statistics</p>
+          </div>
+          <span class="text-gray-500 text-base">05:00 AM</span>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <p class="text-lg font-medium">Start of the week</p>
+          <span class="text-gray-500 text-base">Monday</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Display and appearance -->
+    <div>
+      <h2 class="text-sm text-green-400 font-medium mb-2">Display and appearance</h2>
+      <div class="flex items-center space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707M17.657 17.657l.707.707" />
+        </svg>
+        <p class="text-lg font-medium">User interface</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

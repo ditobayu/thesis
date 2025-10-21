@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your info</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center px-5 pt-4 pb-2 border-b border-gray-200">
+    <div></div>
+    <h1 class="text-lg font-medium">Your info</h1>
+    <div class="flex items-center gap-3">
+      <button class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+        </svg>
+        <span class="absolute top-0 right-0 block h-2 w-2 bg-red-500 rounded-full"></span>
+      </button>
+      <img src="/dummy.jpeg" alt="Profile" class="w-7 h-7 rounded-full">
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="flex-1 overflow-y-auto p-5 space-y-8">
+
+    <!-- Emergency Info -->
+    <section>
+      <h2 class="text-base font-medium mb-3">Emergency info</h2>
+      <div class="space-y-2">
+        <button class="w-full bg-gray-100 rounded-xl px-4 py-4 flex items-center justify-between">
+          <span class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10m-9 4h8m-9 4h10m-4-8V3"/>
+            </svg>
+            <span>Medical information</span>
+          </span>
+        </button>
+
+        <button class="w-full bg-gray-100 rounded-xl px-4 py-4 flex items-center justify-between">
+          <span class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a7 7 0 00-14 0v2h5m-5 0H4v-2a7 7 0 0114 0v2h-5zM12 14a5 5 0 100-10 5 5 0 000 10z"/>
+            </svg>
+            <span>Emergency contacts</span>
+          </span>
+        </button>
+
+        <button class="w-full bg-gray-100 rounded-xl px-4 py-4 flex items-center justify-between">
+          <span class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0-.667.333-1 1-1h7c.667 0 1 .333 1 1v8c0 .667-.333 1-1 1h-7c-.667 0-1-.333-1-1v-8zM5 12h2v8H5v-8z"/>
+            </svg>
+            <span>Emergency info access</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Your videos -->
+    <section>
+      <h2 class="text-base font-medium mb-3">Your videos</h2>
+      <div class="bg-gray-100 rounded-xl px-4 py-4 text-gray-600">
+        No emergency videos
+      </div>
+    </section>
+
+    <!-- Help & Support -->
+    <section>
+      <h2 class="text-base font-medium mb-3">Help & support</h2>
+      <div class="space-y-2">
+        <button class="w-full bg-gray-100 rounded-xl px-4 py-4 flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+          <span>Demos</span>
+        </button>
+
+        <button class="w-full bg-gray-100 rounded-xl px-4 py-4 flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 14h.01M16 10h.01M12 20a8 8 0 100-16 8 8 0 000 16z"/>
+          </svg>
+          <span>Help</span>
+        </button>
+
+        <button class="w-full bg-gray-100 rounded-xl px-4 py-4 flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 14h.01M16 10h.01M12 20a8 8 0 100-16 8 8 0 000 16z"/>
+          </svg>
+          <span>Send feedback</span>
+        </button>
+
+        <button class="w-full bg-gray-100 rounded-xl px-4 py-4 flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17h2m-1-9a3 3 0 013 3v6a3 3 0 01-6 0v-6a3 3 0 013-3z"/>
+          </svg>
+          <span>Open source licenses</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bottom navigation -->
+  <nav class="border-t border-gray-200 bg-white fixed bottom-0 left-0 right-0 flex justify-around py-2">
+    <button class="flex flex-col items-center text-gray-500">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l9 9-9 9-9-9 9-9z"/>
+      </svg>
+      <span class="text-xs">Home</span>
+    </button>
+
+    <button class="flex flex-col items-center text-gray-500">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/>
+      </svg>
+      <span class="text-xs">Features</span>
+    </button>
+
+    <button class="flex flex-col items-center text-blue-600">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A9 9 0 1118.364 4.56 9 9 0 015.12 17.804z"/>
+      </svg>
+      <span class="text-xs font-medium">Your info</span>
+    </button>
+  </nav>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KPIs Dashboard</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen font-sans">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 py-3 bg-gray-800">
+    <div class="flex items-center space-x-3">
+      <button class="text-gray-300">
+        <!-- Menu icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <h1 class="text-lg font-semibold">KPIs</h1>
+    </div>
+    <div class="flex items-center space-x-3">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
+      </svg>
+      <img src="/dummy.jpeg" alt="Profile" class="w-8 h-8 rounded-full bg-gray-700">
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="p-4 space-y-4">
+
+    <!-- Total Installs Card -->
+    <section class="bg-gray-800 rounded-2xl p-4 shadow-lg">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-base font-medium">Total installs</h2>
+        <p class="text-sm text-gray-400">Oct 19, 2025</p>
+      </div>
+      <div class="flex justify-between items-center">
+        <div>
+          <p class="text-xs text-gray-400">28 day average</p>
+        </div>
+        <p class="text-2xl font-semibold">39</p>
+      </div>
+      <div class="mt-3">
+        <!-- Dummy line chart -->
+        <div class="w-full h-24 bg-gray-700 rounded-lg relative overflow-hidden">
+          <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gray-600"></div>
+          <svg viewBox="0 0 100 30" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full">
+            <polyline fill="none" stroke="#60A5FA" stroke-width="2" points="0,20 20,20 40,18 60,17 80,15 100,15" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Active Devices Card -->
+    <section class="bg-gray-800 rounded-2xl p-4 shadow-lg">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-base font-medium">Active devices</h2>
+        <p class="text-sm text-gray-400">Oct 19, 2025</p>
+      </div>
+      <div class="flex justify-between items-center">
+        <div>
+          <p class="text-xs text-gray-400">28 day average</p>
+          <p class="text-lg font-semibold">12.3</p>
+        </div>
+        <p class="text-2xl font-semibold">11</p>
+      </div>
+      <div class="mt-3">
+        <div class="w-full h-24 bg-gray-700 rounded-lg relative overflow-hidden">
+          <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gray-600"></div>
+          <svg viewBox="0 0 100 30" preserveAspectRatio="none" class="absolute bottom-0 w-full h-full">
+            <polyline fill="none" stroke="#60A5FA" stroke-width="2" points="0,15 10,14 20,17 30,15 40,19 50,14 60,18 70,15 80,20 100,18" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audience Growth Rate Card -->
+    <section class="bg-gray-800 rounded-2xl p-4 shadow-lg">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-base font-medium">Audience growth rate</h2>
+        <p class="text-sm text-gray-400">Oct 19, 2025</p>
+      </div>
+      <div class="flex justify-between items-center">
+        <div>
+          <p class="text-xs text-gray-400">28 day average</p>
+          <p class="text-lg font-semibold text-red-400">-31.48%</p>
+        </div>
+        <p class="text-2xl font-semibold text-red-400">-21.43%</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 flex justify-around py-2">
+    <button class="flex flex-col items-center text-blue-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 12h16M4 6h16M4 18h16" />
+      </svg>
+      <span class="text-xs mt-1">KPIs</span>
+    </button>
+    <button class="flex flex-col items-center text-gray-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12l5-5m0 0l5 5m-5-5v12" />
+      </svg>
+      <span class="text-xs mt-1">Releases</span>
+    </button>
+    <button class="flex flex-col items-center text-gray-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4z" />
+      </svg>
+      <span class="text-xs mt-1">Inbox</span>
+    </button>
+    <button class="flex flex-col items-center text-gray-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8h18M3 16h18" />
+      </svg>
+      <span class="text-xs mt-1">Reviews</span>
+    </button>
+  </nav>
+
+</body>
+</html>
