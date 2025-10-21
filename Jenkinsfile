@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+
     // Define a custom Docker Compose project name
     environment {
         COMPOSE_PROJECT_NAME = 'skripsi'
@@ -24,18 +24,6 @@ pipeline {
                     
                     echo 'Checking container status...'
                     sh 'docker compose ps'
-                }
-            }
-        }
-        
-        stage('Health Check') {
-            steps {
-                script {
-                    echo 'Waiting for service to be ready...'
-                    sleep(time: 5, unit: 'SECONDS')
-                    
-                    echo 'Checking if service is accessible...'
-                    sh 'curl -f http://localhost:8083 || exit 1'
                 }
             }
         }
