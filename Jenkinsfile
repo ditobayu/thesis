@@ -16,13 +16,13 @@ pipeline {
             steps {
                 script {
                     echo 'Stopping existing containers...'
-                    sh 'docker-compose down || true'
+                    sh 'docker compose down || true'
                     
                     echo 'Starting containers...'
-                    sh 'docker-compose up -d'
+                    sh 'docker compose up -d'
                     
                     echo 'Checking container status...'
-                    sh 'docker-compose ps'
+                    sh 'docker compose ps'
                 }
             }
         }
