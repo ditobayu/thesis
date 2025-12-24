@@ -14,7 +14,7 @@ library(tidyverse)
 # -----------------------------------------------------------------
 
 # Tentukan nama file Anda
-nama_file <- "ssim.csv"
+nama_file <- "ssim2.csv"
 
 # Baca data CSV Anda
 # PENTING: Pastikan file CSV ini ada di "Working Directory" RStudio Anda.
