@@ -1,11 +1,13 @@
-version: '3.8'
-
 services:
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: skripsi-web
-    ports:
-      - "8083:80"
+  thesis-static:
+    image: nginx:alpine
+    container_name: thesis-static
     restart: unless-stopped
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    external: true
